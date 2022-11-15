@@ -22,7 +22,7 @@
 	},
 	{
 	    "type": "file",
-	    "source": "guix.sh",
+	    "source": "guix-init.sh",
 	    "destination": "/~/guix-init.sh"
 	},
 	{
