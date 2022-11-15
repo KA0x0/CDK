@@ -51,6 +51,7 @@ mount -t overlay overlay -o lowerdir=$STORE_PREFIX,upperdir=$rwdir,workdir=$work
 mount --move /.rw-store $STORE_PREFIX
 rmdir /.rw-store
 
-hostname=host
-
-guix system init /home/$USER/$HOSTconfig.scm /mnt
+HOST=uname -n
+cd /mnt/root/
+git clone https://github.com/KA0x0/channel-4-guix
+guix system init /home/root/channel-4-guix/$HOST-config.scm /mnt
