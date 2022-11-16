@@ -12,7 +12,7 @@
 	},
 	{
 	    "type": "file",
-	    "source": "fetch-key".scm,
+	    "source": "fetch-key.scm",
 	    "destination": "/~/fetch-key.scm"
 	},
 	{
