@@ -12,8 +12,8 @@
 	},
 	{
 	    "type": "file",
-	    "source": "aws-fetch-ssh-key",
-	    "destination": "/~/aws-fetch-ssh-key"
+	    "source": "fetch-key".scm,
+	    "destination": "/~/fetch-key.scm"
 	},
 	{
 	    "type": "file",
