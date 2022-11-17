@@ -5,10 +5,10 @@ set -e
 wget https://ci.guix.gnu.org/search/latest/archive?query=spec:tarball+status:success+system:x86_64-linux+guix-binary.tar.xz -o x86_64-linux+guix-binary-latest.tar.xz
 tar --warning=no-timestamp -xf x86_64-linux+guix-binary-latest.tar.xz
 mv var/guix /var/ && mv gnu /
-ln -sf /var/guix/profiles/per-user/root/guix-profile          ~root/.guix-profile
+ln -sf /var/guix/profiles/per-user/root/guix-profile ~root/.guix-profile
 groupadd --system guixbuild
-for i in `seq -w 1 10`;   do     useradd -g guixbuild -G guixbuild                       -d /var/empty -s `which nologin`                -c "Guix build user $i" --system                guixbuilder$i;   done
-cp ~root/.guix-profile/lib/systemd/system/guix-daemon.service         /etc/systemd/system/
+for i in `seq -w 1 10`; do useradd -g guixbuild -G guixbuild -d /var/empty -s `which nologin` -c "Guix build user $i" --system guixbuilder$i; done
+cp ~root/.guix-profile/lib/systemd/system/guix-daemon.service /etc/systemd/system/
 systemctl start guix-daemon
 mkdir -p /usr/local/bin
 ln -s /var/guix/profiles/per-user/root/guix-profile/bin/guix /usr/local/bin/guix
