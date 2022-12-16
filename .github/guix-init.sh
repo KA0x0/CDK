@@ -23,7 +23,7 @@ unit: sectors
 /dev/xvdf1 : start=        2048, size=    16775168, type=83, bootable
 END
 
-mkfs.bcachefs -L my-root /dev/xvdf1
+mkfs.bcachefs -L root /dev/xvdf1
 mount /dev/xvdf1 /mnt
 
 TARGET=/mnt
