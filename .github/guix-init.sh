@@ -54,4 +54,4 @@ rmdir /.rw-store
 HOST=uname -n
 cd /mnt/root/
 git clone https://github.com/KA0x0/channel-4-guix
-guix system init /home/root/channel-4-guix/$HOST-config.scm /mnt
+guix system init /home/root/channel-4-guix/home/$HOST-config.scm /mnt
