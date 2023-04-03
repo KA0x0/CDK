@@ -43,7 +43,7 @@ export class Ec2CdkStack extends cdk.Stack {
     role.addManagedPolicy(iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonSSMManagedInstanceCore'))
 
     // Use Guix - CPU Type ARM64
-    const ami = new ec2.AmazonLinuxImage({
+    const ami = new ec2.Guix({
       generation: ec2.AmazonLinuxGeneration.GUIX,
       cpuType: ec2.AmazonLinuxCpuType.ARM_64
     });
