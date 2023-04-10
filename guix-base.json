@@ -22,8 +22,13 @@
 	},
 	{
 	    "type": "file",
-	    "source": "guix-init.sh",
+	    "source": "src/guix-init.sh",
 	    "destination": "/~/guix-init.sh"
+	},
+	{
+	    "type": "file",
+	    "source": "src/config.sh",
+	    "destination": "/~/config.sh"
 	},
 	{
 	    "type": "shell",
