@@ -10,7 +10,7 @@
       "cdk": "cdk"
     },
     "devDependencies": {
-      "@types/node": "18.16.1",
+      "@types/node": "18.16.2",
       "aws-cdk": "2.77.0",
       "typescript": "5.0.4"
     },
