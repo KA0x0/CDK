@@ -5,5 +5,5 @@
 
 HOST=uname -n
 cd /mnt/root/
-git clone https://github.com/KA0x0/channel-4-guix
-guix system init /home/root/channel-4-guix/home/$HOST-config.scm /mnt
+git clone https://github.com/KA0x0/C4G
+guix system init /root/C4G/home/$HOST-config.scm /mnt
