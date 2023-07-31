@@ -1,2 +1,2 @@
 # Cloud-Development-Kit
-AWS CDK in Typescript for my services.
+AWS CDK in Python for my services.
